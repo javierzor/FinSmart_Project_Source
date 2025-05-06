@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.finsmart.app.ui.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_transactionDetailFragment"
+            app:destination="@id/transactionDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/budgetFragment"
+        android:name="com.finsmart.app.ui.budget.BudgetFragment"
+        android:label="@string/budget"
+        tools:layout="@layout/fragment_budget">
+        <action
+            android:id="@+id/action_budgetFragment_to_createBudgetFragment"
+            app:destination="@id/createBudgetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/investmentsFragment"
+        android:name="com.finsmart.app.ui.investments.InvestmentsFragment"
+        android:label="@string/investments"
+        tools:layout="@layout/fragment_investments">
+        <action
+            android:id="@+id/action_investmentsFragment_to_investmentDetailFragment"
+            app:destination="@id/investmentDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/educationFragment"
+        android:name="com.finsmart.app.ui.education.EducationFragment"
+        android:label="@string/education"
+        tools:layout="@layout/fragment_education">
+        <action
+            android:id="@+id/action_educationFragment_to_courseDetailFragment"
+            app:destination="@id/courseDetailFragment" />
+        <action
+            android:id="@+id/action_educationFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aiAssistantFragment"
+        android:name="com.finsmart.app.ui.aiassistant.AiAssistantFragment"
+        android:label="@string/ai_assistant"
+        tools:layout="@layout/fragment_ai_assistant" />
+
+    <fragment
+        android:id="@+id/arFinanceFragment"
+        android:name="com.finsmart.app.ui.arfinance.ArFinanceFragment"
+        android:label="@string/ar_finance"
+        tools:layout="@layout/fragment_ar_finance" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.finsmart.app.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <!-- Fragmentos secundarios -->
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="com.finsmart.app.ui.dashboard.TransactionDetailFragment"
+        android:label="Detalle de transacción"
+        tools:layout="@layout/fragment_transaction_detail">
+        <argument
+            android:name="transactionId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createBudgetFragment"
+        android:name="com.finsmart.app.ui.budget.CreateBudgetFragment"
+        android:label="@string/create_budget"
+        tools:layout="@layout/fragment_create_budget" />
+
+    <fragment
+        android:id="@+id/investmentDetailFragment"
+        android:name="com.finsmart.app.ui.investments.InvestmentDetailFragment"
+        android:label="Detalle de inversión"
+        tools:layout="@layout/fragment_investment_detail">
+        <argument
+            android:name="investmentId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/courseDetailFragment"
+        android:name="com.finsmart.app.ui.education.CourseDetailFragment"
+        android:label="Detalle de curso"
+        tools:layout="@layout/fragment_course_detail">
+        <argument
+            android:name="courseId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.finsmart.app.ui.education.ArticleDetailFragment"
+        android:label="Detalle de artículo"
+        tools:layout="@layout/fragment_article_detail">
+        <argument
+            android:name="articleId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.finsmart.app.ui.profile.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FinSmart</string>
+    
+    <!-- Textos generales -->
+    <string name="welcome">Bienvenido a FinSmart</string>
+    <string name="get_started">Comenzar</string>
+    <string name="next">Siguiente</string>
+    <string name="back">Atrás</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save">Guardar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="delete">Eliminar</string>
+    <string name="edit">Editar</string>
+    <string name="loading">Cargando...</string>
+    
+    <!-- Autenticación -->
+    <string name="login">Iniciar sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_with_google">Continuar con Google</string>
+    <string name="login_with_apple">Continuar con Apple</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="already_have_account">¿Ya tienes una cuenta? Inicia sesión</string>
+    <string name="dont_have_account">¿No tienes una cuenta? Regístrate</string>
+    
+    <!-- Onboarding -->
+    <string name="onboarding_title_1">Gestiona tus finanzas</string>
+    <string name="onboarding_desc_1">Controla tus gastos, ingresos y ahorra de forma inteligente</string>
+    <string name="onboarding_title_2">Invierte con confianza</string>
+    <string name="onboarding_desc_2">Recibe recomendaciones personalizadas basadas en tus objetivos</string>
+    <string name="onboarding_title_3">Aprende sobre finanzas</string>
+    <string name="onboarding_desc_3">Mejora tus conocimientos financieros con cursos interactivos</string>
+    <string name="onboarding_title_4">Asistente financiero IA</string>
+    <string name="onboarding_desc_4">Recibe consejos personalizados y respuestas a tus dudas financieras</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard">Inicio</string>
+    <string name="total_balance">Balance total</string>
+    <string name="income">Ingresos</string>
+    <string name="expenses">Gastos</string>
+    <string name="savings">Ahorros</string>
+    <string name="investments">Inversiones</string>
+    <string name="financial_health">Salud financiera</string>
+    <string name="recent_transactions">Transacciones recientes</string>
+    <string name="view_all">Ver todo</string>
+    <string name="financial_tip">Consejo del día</string>
+    
+    <!-- Presupuesto -->
+    <string name="budget">Presupuesto</string>
+    <string name="create_budget">Crear presupuesto</string>
+    <string name="budget_category">Categoría</string>
+    <string name="budget_amount">Cantidad</string>
+    <string name="budget_period">Periodo</string>
+    <string name="budget_monthly">Mensual</string>
+    <string name="budget_weekly">Semanal</string>
+    <string name="budget_spent">Gastado</string>
+    <string name="budget_remaining">Restante</string>
+    <string name="budget_overview">Resumen de presupuesto</string>
+    
+    <!-- Categorías de gastos -->
+    <string name="category_food">Alimentación</string>
+    <string name="category_transport">Transporte</string>
+    <string name="category_housing">Vivienda</string>
+    <string name="category_entertainment">Entretenimiento</string>
+    <string name="category_shopping">Compras</string>
+    <string name="category_health">Salud</string>
+    <string name="category_education">Educación</string>
+    <string name="category_utilities">Servicios</string>
+    <string name="category_other">Otros</string>
+    
+    <!-- Inversiones -->
+    <string name="investment_portfolio">Portafolio de inversiones</string>
+    <string name="investment_value">Valor actual</string>
+    <string name="investment_return">Rendimiento</string>
+    <string name="investment_recommendations">Recomendaciones</string>
+    <string name="investment_risk">Perfil de riesgo</string>
+    <string name="investment_low_risk">Bajo riesgo</string>
+    <string name="investment_medium_risk">Riesgo medio</string>
+    <string name="investment_high_risk">Alto riesgo</string>
+    <string name="investment_simulator">Simulador de inversiones</string>
+    <string name="investment_amount">Cantidad a invertir</string>
+    <string name="investment_period">Periodo de inversión</string>
+    <string name="investment_calculate">Calcular rendimiento</string>
+    
+    <!-- Educación financiera -->
+    <string name="education">Educación</string>
+    <string name="courses">Cursos</string>
+    <string name="articles">Artículos</string>
+    <string name="glossary">Glosario</string>
+    <string name="quizzes">Cuestionarios</string>
+    <string name="achievements">Logros</string>
+    <string name="beginner">Principiante</string>
+    <string name="intermediate">Intermedio</string>
+    <string name="advanced">Avanzado</string>
+    <string name="course_progress">Progreso del curso</string>
+    
+    <!-- Asistente IA -->
+    <string name="ai_assistant">Asistente</string>
+    <string name="ask_question">Pregunta algo sobre finanzas...</string>
+    <string name="ai_thinking">Pensando...</string>
+    <string name="ai_suggestions">Sugerencias</string>
+    <string name="ai_analyze_expenses">Analizar mis gastos</string>
+    <string name="ai_investment_advice">Consejos de inversión</string>
+    <string name="ai_budget_help">Ayuda con mi presupuesto</string>
+    <string name="ai_financial_terms">Explicar términos financieros</string>
+    
+    <!-- Metas financieras -->
+    <string name="goals">Metas</string>
+    <string name="create_goal">Crear meta</string>
+    <string name="goal_name">Nombre de la meta</string>
+    <string name="goal_amount">Cantidad objetivo</string>
+    <string name="goal_date">Fecha objetivo</string>
+    <string name="goal_progress">Progreso</string>
+    <string name="goal_completed">¡Meta completada!</string>
+    <string name="goal_add_funds">Añadir fondos</string>
+    
+    <!-- Perfil y configuración -->
+    <string name="profile">Perfil</string>
+    <string name="settings">Configuración</string>
+    <string name="personal_info">Información personal</string>
+    <string name="security">Seguridad</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="appearance">Apariencia</string>
+    <string name="language">Idioma</string>
+    <string name="dark_mode">Modo oscuro</string>
+    <string name="light_mode">Modo claro</string>
+    <string name="system_default">Predeterminado del sistema</string>
+    <string name="logout">Cerrar sesión</string>
+    
+    <!-- Mensajes de error -->
+    <string name="error_generic">Ha ocurrido un error. Inténtalo de nuevo.</string>
+    <string name="error_connection">Error de conexión. Verifica tu internet.</string>
+    <string name="error_login">Error al iniciar sesión. Verifica tus credenciales.</string>
+    <string name="error_registration">Error al registrarse. Inténtalo de nuevo.</string>
+    <string name="error_password_match">Las contraseñas no coinciden.</string>
+    <string name="error_field_required">Este campo es obligatorio.</string>
+    <string name="error_invalid_email">Correo electrónico inválido.</string>
+    
+    <!-- Mensajes de éxito -->
+    <string name="success_registration">¡Registro exitoso!</string>
+    <string name="success_password_reset">Se ha enviado un enlace para restablecer tu contraseña.</string>
+    <string name="success_budget_created">Presupuesto creado exitosamente.</string>
+    <string name="success_goal_created">Meta financiera creada exitosamente.</string>
+    <string name="success_transaction_added">Transacción añadida exitosamente.</string>
+    <string name="success_settings_saved">Configuración guardada exitosamente.</string>
+    
+    <!-- Funcionalidad innovadora: Realidad Financiera Aumentada -->
+    <string name="ar_finance">Realidad Financiera</string>
+    <string name="ar_scan_product">Escanear producto</string>
+    <string name="ar_visualize_goal">Visualizar meta</string>
+    <string name="ar_expense_impact">Impacto de gastos</string>
+    <string name="ar_investment_growth">Crecimiento de inversiones</string>
+    <string name="ar_scan_instructions">Apunta la cámara al producto para analizar</string>
+    <string name="ar_processing">Procesando imagen...</string>
+    <string name="ar_alternatives">Alternativas de ahorro</string>
+    <string name="ar_impact_analysis">Análisis de impacto</string>
+</resources>

@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.arfinance.ArFinanceFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp">
+
+            <!-- Encabezado -->
+            <TextView
+                android:id="@+id/tv_ar_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/ar_finance"
+                android:textAppearance="@style/TextAppearance.FinSmart.Headline2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_ar_subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Visualiza tus finanzas de forma interactiva"
+                android:textAppearance="@style/TextAppearance.FinSmart.Body1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ar_title" />
+
+            <!-- Tarjeta de Escaneo de Productos -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_scan_product"
+                style="@style/Widget.FinSmart.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/primary_light"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ar_subtitle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_scan_product"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="Escanear producto"
+                        android:src="@drawable/ic_scan_product"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_scan_product_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/ar_scan_product"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Subtitle1"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_scan_product"
+                        app:layout_constraintTop_toTopOf="@+id/iv_scan_product" />
+
+                    <TextView
+                        android:id="@+id/tv_scan_product_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Escanea productos para analizar su impacto en tu presupuesto y encontrar alternativas de ahorro"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Body2"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_scan_product"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_scan_product_title" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tarjeta de Visualización de Metas -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_visualize_goal"
+                style="@style/Widget.FinSmart.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/secondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_scan_product">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_visualize_goal"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="Visualizar meta"
+                        android:src="@drawable/ic_visualize_goal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_visualize_goal_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/ar_visualize_goal"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Subtitle1"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_visualize_goal"
+                        app:layout_constraintTop_toTopOf="@+id/iv_visualize_goal" />
+
+                    <TextView
+                        android:id="@+id/tv_visualize_goal_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Visualiza tus metas financieras en el mundo real para mantener la motivación"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Body2"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_visualize_goal"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_visualize_goal_title" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tarjeta de Impacto de Gastos -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_expense_impact"
+                style="@style/Widget.FinSmart.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/accent_coral"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_visualize_goal">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_expense_impact"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="Impacto de gastos"
+                        android:src="@drawable/ic_expense_impact"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_expense_impact_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/ar_expense_impact"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Subtitle1"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_expense_impact"
+                        app:layout_constraintTop_toTopOf="@+id/iv_expense_impact" />
+
+                    <TextView
+                        android:id="@+id/tv_expense_impact_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Visualiza el impacto a largo plazo de tus gastos diarios en tus objetivos financieros"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Body2"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_expense_impact"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_expense_impact_title" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Tarjeta de Crecimiento de Inversiones -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_investment_growth"
+                style="@style/Widget.FinSmart.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/accent_yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_expense_impact">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/iv_investment_growth"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:contentDescription="Crecimiento de inversiones"
+                        android:src="@drawable/ic_investment_growth"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_investment_growth_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="@string/ar_investment_growth"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Subtitle1"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_investment_growth"
+                        app:layout_constraintTop_toTopOf="@+id/iv_investment_growth" />
+
+                    <TextView
+                        android:id="@+id/tv_investment_growth_desc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Visualiza en 3D cómo crecerán tus inversiones a lo largo del tiempo con diferentes escenarios"
+                        android:textAppearance="@style/TextAppearance.FinSmart.Body2"
+                        android:textColor="@color/white"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/iv_investment_growth"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_investment_growth_title" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Sección de Instrucciones -->
+            <TextView
+                android:id="@+id/tv_instructions_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:text="Cómo funciona"
+                android:textAppearance="@style/TextAppearance.FinSmart.Subtitle1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_investment_growth" />
+
+            <TextView
+                android:id="@+id/tv_instructions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="1. Selecciona una de las opciones de Realidad Financiera Aumentada\n\n2. Apunta tu cámara hacia el objeto o espacio que deseas analizar\n\n3. Sigue las instrucciones en pantalla para interactuar con la visualización\n\n4. Guarda o comparte tus resultados para referencia futura"
+                android:textAppearance="@style/TextAppearance.FinSmart.Body2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_instructions_title" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores primarios -->
+    <color name="primary">#1E3A8A</color>
+    <color name="primary_variant">#0F2361</color>
+    <color name="primary_light">#3B5CB8</color>
+    
+    <!-- Colores secundarios -->
+    <color name="secondary">#34D399</color>
+    <color name="secondary_variant">#10B981</color>
+    <color name="secondary_light">#6EE7B7</color>
+    
+    <!-- Colores de acento -->
+    <color name="accent_coral">#F87171</color>
+    <color name="accent_yellow">#FBBF24</color>
+    <color name="accent_purple">#8B5CF6</color>
+    
+    <!-- Colores de fondo -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_dark">#1F2937</color>
+    <color name="surface_light">#F9FAFB</color>
+    <color name="surface_dark">#374151</color>
+    
+    <!-- Colores de texto -->
+    <color name="text_primary_light">#111827</color>
+    <color name="text_secondary_light">#4B5563</color>
+    <color name="text_primary_dark">#F9FAFB</color>
+    <color name="text_secondary_dark">#D1D5DB</color>
+    
+    <!-- Colores de estado -->
+    <color name="success">#10B981</color>
+    <color name="warning">#F59E0B</color>
+    <color name="error">#EF4444</color>
+    <color name="info">#3B82F6</color>
+    
+    <!-- Colores estándar del sistema -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>
